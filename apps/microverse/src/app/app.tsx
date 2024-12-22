@@ -1,6 +1,6 @@
 import * as React from 'react';
-import NxWelcome from './nx-welcome';
 import { Link, Route, Routes } from 'react-router-dom';
+import Microverse from './microverse';
 
 const Home = React.lazy(() => import('home/Module'));
 
@@ -16,7 +16,7 @@ export function App() {
         </li>
       </ul>
       <Routes>
-        <Route path="/" element={<NxWelcome title="microverse" />} />
+        <Route path="/" element={<Microverse />} />
         <Route path="/home" element={<Home />} />
       </Routes>
     </React.Suspense>
