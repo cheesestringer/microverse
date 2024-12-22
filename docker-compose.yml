@@ -1,0 +1,14 @@
+services:
+  microverse:
+    container_name: microverse
+    build:
+      dockerfile: ./apps/microverse/Dockerfile
+    ports:
+      - "4200:80"
+  
+  home:
+    container_name: home
+    build:
+      dockerfile: ./apps/home/Dockerfile
+    ports:
+      - "4201:80"

@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "docker": "docker-compose up --build -d",
     "microverse":"nx serve microverse",
     "microverse:test":"nx test microverse",
     "microverse:e2e":"nx e2e microverse-e2e",
