@@ -2,7 +2,17 @@
   "name": "@microverse",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "microverse":"nx serve microverse",
+    "microverse:test":"nx test microverse",
+    "microverse:e2e":"nx e2e microverse-e2e",
+    "microverse:build":"nx build microverse",
+    "home":"nx serve microverse --devRemotes=home",
+    "home:test":"nx test home",
+    "home:e2e":"nx e2e home-e2e",
+    "home:build":"nx build home",
+    "hooks:test": "nx test hooks"
+  },
   "private": true,
   "devDependencies": {
     "@babel/core": "^7.14.5",
