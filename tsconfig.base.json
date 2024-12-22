@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@microverse/hooks": ["libs/shared/hooks/src/index.ts"],
       "home/Module": ["apps/home/src/remote-entry.ts"]
     }
   },
